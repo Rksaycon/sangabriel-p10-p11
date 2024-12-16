@@ -1,0 +1,87 @@
+/* Updated Navbar Styling with New Design Colors */
+
+/* Overall Navbar Styling */
+.custom-navbar {
+  background-color: #2c3e50; /* Darker blue-gray background for a sleek look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for more contrast */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.custom-navbar:hover {
+  background-color: #34495e; /* Slightly lighter gray on hover */
+}
+
+/* Navbar Brand */
+.custom-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #e74c3c; /* Vibrant red color for the brand */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.custom-brand:hover {
+  color: #c0392b; /* Darker red shade for hover effect */
+}
+
+/* Navbar Links */
+.custom-nav-links .nav-link {
+  color: #ecf0f1; /* Soft off-white color for navbar links */
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-nav-links .nav-link:hover {
+  background-color: #e74c3c; /* Red background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Toggler Button for Mobile */
+.navbar-toggler {
+  border-color: #ecf0f1; /* Light border for toggler */
+}
+
+.navbar-toggler-icon {
+  background-color: #ecf0f1; /* Light icon color for toggler */
+}
+
+/* Logout Button */
+.custom-logout-btn {
+  background: none;
+  border: none;
+  color: #e74c3c; /* Vibrant red for logout button */
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.custom-logout-btn:hover {
+  color: #c0392b; /* Darker red for hover effect */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .custom-nav-links .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 14px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #e74c3c; /* Red color for toggler icon */
+  }
+
+  .navbar-nav {
+    background-color: #2c3e50; /* Dark background on mobile */
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0; /* Spacing between items */
+  }
+}

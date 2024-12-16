@@ -1,0 +1,207 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Adds a slight overlay */
+  background-blend-mode: overlay;
+  color: white;
+  padding: 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #0056b3;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* About Us Section */
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Programs Section */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card a {
+  color: white;
+  background-color: #17a2b8;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #10707d;
+}
+
+/* Admission Section */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Departments Section */
+.row div h5 {
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.row div p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .row div h5 {
+    font-size: 1.1rem;
+  }
+}
+/* Programs Section */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #e3f2fd; /* New background color */
+  color: #1a237e; /* Text color for better contrast */
+  padding: 1.5rem; /* Add padding for spacing inside the card */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem; /* Add spacing between text and the button */
+}
+
+.card a {
+  color: white;
+  background-color: #0288d1; /* Updated button color to match the theme */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #01579b;
+}
+/* Programs Section */
+.card p {
+  background-color: #f1f8e9; /* Light greenish background */
+  padding: 1rem;
+  border-radius: 8px;
+  color: #1a237e; /* Dark text color for contrast */
+  margin-bottom: 1.5rem; /* Adds space below the paragraph */
+}

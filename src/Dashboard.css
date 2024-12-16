@@ -1,0 +1,211 @@
+/* New Dashboard Layout */
+
+/* Dashboard Container */
+.dashboard-container {
+  background-color: #2c3e50; /* Darker shade for a more sophisticated look */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  margin-top: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dashboard-container:hover {
+  transform: scale(1.05); /* Subtle hover effect */
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h4 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #bdc3c7; /* Light gray for header */
+  text-transform: uppercase;
+}
+
+/* Table Styles */
+.table {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.table:hover {
+  transform: scale(1.02);
+}
+
+.table th {
+  background-color: #3498db; /* Blue accent for headers */
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.table td {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #ecf0f1;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary, .btn-info, .btn-warning, .btn-danger {
+  border-radius: 25px;
+  padding: 16px 34px;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border: none;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #f39c12;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+.btn-warning:hover {
+  background-color: #e67e22;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Add User Button */
+.add-user-btn {
+  background-color: #27ae60;
+  color: white;
+  border-radius: 25px;
+  padding: 16px 34px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.add-user-btn:hover {
+  background-color: #2ecc71;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Card/Form Styles */
+.card {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 45px;
+  padding: 35px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card .form-label {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid #bdc3c7;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 10px rgba(26, 188, 156, 0.5);
+}
+
+.form-control::placeholder {
+  color: #7f8c8d;
+}
+
+/* Modal Fade-in Animation */
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 25px;
+  }
+
+  .table th, .table td {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .btn-primary, .btn-info, .btn-warning, .btn-danger, .add-user-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .dashboard-header h4 {
+    font-size: 2.3rem;
+  }
+
+  .card .form-label {
+    font-size: 1rem;
+  }
+}

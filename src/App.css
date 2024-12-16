@@ -1,0 +1,45 @@
+/* Ensure full height for html, body, and container */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full height container */
+.login-container {
+  height: 100vh; /* Makes sure it fills the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling */
+.card {
+  width: 100%;
+  max-width: 400px; /* Max width for larger screens */
+  margin: auto;
+}
+
+/* Center content inside the card */
+.card-body {
+  padding: 20px;
+}
+
+/* Make sure the button takes full width */
+.btn-block {
+  width: 100%;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}
